@@ -10,11 +10,11 @@ print "Device Scanner"
 file_name = 'devicelog.txt'
 is_checked_in = False
 
-check_interval = 60
+check_interval = 5 * 60 # 5 minutes
 
 def save(status):
     with open(file_name, "a") as myfile:
-        myfile.write(status)
+        myfile.write(status + '\n')
 
 while True:
     now = time.strftime("%Y-%m-%d %H:%M:%S", time.gmtime())

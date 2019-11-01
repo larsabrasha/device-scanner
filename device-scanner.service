@@ -1,0 +1,14 @@
+[Unit]
+Description=Device Scanner
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python -u device-scanner.py
+WorkingDirectory=/home/pi/device-scanner
+StandardOutput=inherit
+StandardError=inherit
+Restart=always
+User=pi
+
+[Install]
+WantedBy=multi-user.target
