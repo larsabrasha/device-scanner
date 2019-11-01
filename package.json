@@ -1,0 +1,14 @@
+{
+  "name": "device-scanner",
+  "version": "1.0.0",
+  "description": "A bluetooth device scanner",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lars Arvidsson",
+  "license": "MIT",
+  "dependencies": {
+    "noble-mac": "https://github.com/Timeular/noble-mac.git"
+  }
+}
