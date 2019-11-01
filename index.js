@@ -1,3 +1,6 @@
+// On Linux install bluetooth support like this:
+// sudo apt-get install bluetooth bluez libbluetooth-dev libudev-dev
+
 const noble = require("noble-mac");
 const fs = require("fs");
 const { device } = require("./device");
@@ -6,7 +9,7 @@ const { device } = require("./device");
 // const scanInterval = 5000; // every five seconds
 const scanInterval = 60000; // every minute
 const maxNumberOfFailedConnections = 3;
-var logFile = "devicelog.txt";
+const logFile = "devicelog.txt";
 
 var lastTimeLarsAppleWatchWasFound = null;
 var isCheckedIn = false;
